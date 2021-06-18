@@ -1,9 +1,7 @@
 fun main() {
-    val likes = 1
+    val likes = 21
 
-    val peopleString = if (likes == 11 || likes.toString().endsWith("11")) "людям"
-    else if (likes == 1 || likes.toString().endsWith("1")) "человеку"
-    else "людям"
+   val result = if (likes % 10 == 1 && likes % 100 != 11) "человеку" else "людям"
 
-    print("Понравилось $likes $peopleString")
+    print("Понравилось $likes $result")
 }
